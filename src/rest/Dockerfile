@@ -78,8 +78,8 @@ COPY ./slim_unified_client_rest.py /app/slim_unified_client_rest.py
 COPY ./slim_unified_client_rest.ini /app/slim_unified_client_rest.ini
 
 # Setup EXPOSE
-EXPOSE 9000
 EXPOSE 9090
+EXPOSE 9000
 
 EXPOSE 80
 

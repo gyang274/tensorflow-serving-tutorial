@@ -59,8 +59,8 @@ COPY ./tf_servables /app/tf_servables
 COPY ./init.sh /app/init.sh
 
 # Setup EXPOSE
-EXPOSE 9000
 EXPOSE 9090
+EXPOSE 9000
 
 # Setup ENTRYPOINT
 ENTRYPOINT ["/bin/bash", "/app/init.sh"]

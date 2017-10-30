@@ -6,7 +6,7 @@
 
 ### Docker Run Image
 ```
-$ docker run -p 80:80 -t gyang274/yg-tfs-slim:rest
+$ docker run -p 80:80 -d gyang274/yg-tfs-slim:rest
 ```
 
 ### REST API
