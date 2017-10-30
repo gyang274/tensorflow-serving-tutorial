@@ -5,6 +5,7 @@
 ## Quick Start
 
 ### Docker Run Image
+
 ```
 $ docker run -p 80:80 -d gyang274/yg-tfs-slim:rest
 ```
@@ -52,6 +53,25 @@ $ curl -X POST 127.0.0.1:80 -d '{
 # one line, since the terminal might interpret line breaks as `\n` and add it into payload which causes invalid json.
 
 $ curl -X POST 127.0.0.1:80 -d '{"image_urls": ["https://upload.wikimedia.org/wikipedia/commons/d/d9/First_Student_IC_school_bus_202076.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg","https://upload.wikimedia.org/wikipedia/commons/f/fd/Qantas_a380_vh-oqa_takeoff_heathrow_arp.jpg"]}'
+```
+
+### Test the REST API via Python
+
+```
+import requests
+
+response = requests.post(
+  url="http://127.0.0.1:80",
+  json={
+    "image_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/First_Student_IC_school_bus_202076.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fd/Qantas_a380_vh-oqa_takeoff_heathrow_arp.jpg"
+    ]
+  }
+)
+
+print(response.json())
 ```
 
 ## [Step by Step Guide](https://gyang274.github.io/docker-tensorflow-serving-slim/)
