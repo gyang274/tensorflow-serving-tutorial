@@ -1,0 +1,681 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>uWSGI Application Setup · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Guang Yang">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="css/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="0x03b01.rest.nginx.html" />
+    
+    
+    <link rel="prev" href="0x03.rest.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.docker.com/" target="_blank" class="custom-link">Docker</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Docker Image of Tensorflow Serving Inception Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="0x00.init.html">
+            
+                <a href="0x00.init.html">
+            
+                    
+                    Prerequisite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="0x01.tfs.html">
+            
+                <a href="0x01.tfs.html">
+            
+                    
+                    Tensorflow Serving Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="0x02.slim.html">
+            
+                <a href="0x02.slim.html">
+            
+                    
+                    Tensorflow Serving with Tensorflow Slim Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="0x02b00.slim.inception.v4.html">
+            
+                <a href="0x02b00.slim.inception.v4.html">
+            
+                    
+                    Tensorflow Serving with Slim Inception-V4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="0x02b01.slim.inception.resnet.v2.html">
+            
+                <a href="0x02b01.slim.inception.resnet.v2.html">
+            
+                    
+                    Tensorflow Serving with Slim Inception-Resnet-V2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="0x02b02.slim.unified.client.html">
+            
+                <a href="0x02b02.slim.unified.client.html">
+            
+                    
+                    A Unified Slim Client on PredictionService
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="0x03.rest.html">
+            
+                <a href="0x03.rest.html">
+            
+                    
+                    Add REST-API via uWSGI and Nginx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.4.1" data-path="0x03b00.rest.uwsgi.html">
+            
+                <a href="0x03b00.rest.uwsgi.html">
+            
+                    
+                    uWSGI Application Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="0x03b01.rest.nginx.html">
+            
+                <a href="0x03b01.rest.nginx.html">
+            
+                    
+                    Nginx Web Server Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="0x04.docker.html">
+            
+                <a href="0x04.docker.html">
+            
+                    
+                    Docker Images that Serves Tensorflow Slim Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="0x04b00.docker.grpc.html">
+            
+                <a href="0x04b00.docker.grpc.html">
+            
+                    
+                    Docker Image supports gPRC + protobuf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="0x04b01.docker.rest.html">
+            
+                <a href="0x04b01.docker.rest.html">
+            
+                    
+                    Docker Image supports gPRC + protobuf, and REST + JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="0xff.misc.html">
+            
+                <a href="0xff.misc.html">
+            
+                    
+                    Miscellaneous
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="0xffb00.misc.github.html">
+            
+                <a href="0xffb00.misc.github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="0xffb00.misc.tensorflow.html">
+            
+                <a href="0xffb00.misc.tensorflow.html">
+            
+                    
+                    Tensorflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="0xffb00.misc.uwsgi.nginx.html">
+            
+                <a href="0xffb00.misc.uwsgi.nginx.html">
+            
+                    
+                    uWSGI + Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="0xffb00.misc.docker.html">
+            
+                <a href="0xffb00.misc.docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://github.com/gyang274/">
+            
+                    
+                    yg
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >uWSGI Application Setup</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="uwsgi-application-setup">uWSGI Application Setup</h2>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>keep alive the tensorflow serving model server</li>
+</ul>
+<pre><code>$ cd src/serving
+
+$ bazel-bin/tensorflow_serving/model_servers/tensorflow_model_server \
+    --model_name=slim_inception_resnet_v2 \
+    --model_base_path=$PWD/tf_servables/slim/inception-resnet-v2 \
+    --port=9000 &amp;
+
+$ bazel-bin/tensorflow_serving/model_servers/tensorflow_model_server \
+    --model_name=slim_inception_v4 \
+    --model_base_path=$PWD/tf_servables/slim/inception-v4 \
+    --port=9090 &amp;
+
+$ ps aux | grep tensorflow_serving
+
+$ cd ..
+</code></pre><h3 id="create-rest-api-target">Create REST API Target</h3>
+<pre><code># note: `src` is the root dir in code snippets in default, unless specified via `cd` in context.
+</code></pre><h4 id="create-python-scripts-and-configuration-file">create python scripts and configuration file</h4>
+<pre><code>$ [sudo] mkdir -p rest
+
+$ [sudo] touch rest/slim_unified_client_rest.py
+
+$ [sudo] touch rest/slim_unified_client_rest.ini
+</code></pre><h4 id="ceate-a-standalone-copy-of-tensorflowservingapis-from-slimunifiedclientrunfiles">ceate a standalone copy of <code>tensorflow_serving.apis</code> from <code>slim_unified_client.runfiles</code></h4>
+<pre><code># slim_unified_client.runfiles contains protobuf specification of predict_pb2 and prediction_service_pb2
+# note: i assume one can compile these protobuf directly, but i haven&apos;t tried and tested on that approach
+
+# ...
+# from tensorflow_serving.apis import predict_pb2
+# from tensorflow_serving.apis import prediction_service_pb2
+# ...
+
+# add -L to create a standalone copy
+# note this tensorflow_serving directory contains classification_pb2.py, predict_pb2.py, regression_pb2.py,
+# prediction_service_pb2, and etc, which are same and so useful for most of service from tensorflow serving
+
+$ cp -rL ./serving/bazel-bin/tensorflow_serving/example/slim_unified_client.runfiles/tf_serving/tensorflow_serving ./rest
+
+$ [sudo] rm -r ./rest/tensorflow_serving/example
+
+$ cd rest
+</code></pre><h4 id="slimunifiedclientrestpy"><code>slim_unified_client_rest.py</code></h4>
+<pre><code>...
+from __future__ import print_function
+from __future__ import absolute_import
+from __future__ import division
+
+# python2
+from urllib2 import urlopen
+# python3
+# from urllib.request import urlopen
+
+import json
+from multiprocessing.pool import ThreadPool
+
+import numpy as np
+import tensorflow as tf
+
+# This is a placeholder for a Google-internal import.
+
+from grpc.beta import implementations
+from google.protobuf import json_format, text_format
+
+from tensorflow_serving.apis import predict_pb2
+from tensorflow_serving.apis import prediction_service_pb2
+...
+</code></pre><h4 id="slimunifiedclientrestini"><code>slim_unified_client_rest.ini</code></h4>
+<pre><code>[uwsgi]
+project = slim_unified_client_rest
+
+# user and group
+uid = www-data
+gid = www-data
+
+# project base directory
+base = &lt;git-repo-base&gt;/src/rest
+
+# project wsgi application
+chdir = %(base)
+module = slim_unified_client_rest:application
+
+plugins = python
+
+# python home directory
+pyhome = /usr
+# pythonpath = /usr/lib/python2.7
+enable-threads = true
+
+# route the static
+# route = /static/(.*) static:%(base)/dist/$1
+
+# master and worker
+master = true
+processes = 5
+
+# socket
+socket = /run/uwsgi/%(project).sock
+chown-socket = %(uid):%(gid)
+chmod-socket = 666
+
+vaccum = true
+
+die-on-term = true
+</code></pre><h4 id="development-with---touch-reload">development with <code>--touch-reload</code></h4>
+<pre><code># in case of further development: make changes on .py file will cause uwsgi reload so to have instant effect
+
+$ sudo uwsgi --http-socket :80 --ini slim_unified_client_rest.ini --touch-reload slim_unified_client_rest.py
+</code></pre><pre><code>$ sudo uwsgi --http-socket :8080 \
+    --ini slim_unified_client_rest.ini \
+    --touch-reload slim_unified_client_rest.py
+</code></pre><pre><code># in case /run/uwsgi not exists
+
+$ sudo mkdir /run/uwsgi
+
+$ sudo chown www-data:www-data /run/uwsgi
+
+$ sudo chmod 0666 /run/uwsgi
+</code></pre><pre><code># inspect the uwsgi application
+
+$ curl -X POST 127.0.0.1:80 -d &apos;{&quot;image_urls&quot;: [&quot;&lt;image_url_0&gt;&quot;,&quot;&lt;image_url_1&gt;&quot;,&quot;&lt;image_url_2&gt;&quot;]}&apos;
+
+$ curl -X POST 127.0.0.1:80 -d &apos;{
+    &quot;image_urls&quot;: [
+      &quot;https://upload.wikimedia.org/wikipedia/commons/d/d9/First_Student_IC_school_bus_202076.jpg&quot;,
+      &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg&quot;,
+      &quot;https://upload.wikimedia.org/wikipedia/commons/f/fd/Qantas_a380_vh-oqa_takeoff_heathrow_arp.jpg&quot;
+    ]
+  }&apos;
+</code></pre><h3 id="deploy-to-uwsgi-systemd">Deploy to uWSGI <code>systemd</code></h3>
+<h4 id="create-a-systemd-daemon-for-uwsgi">create a <code>systemd daemon</code> for uWSGI</h4>
+<pre><code>$ sudo touch /etc/systemd/system/uwsgi.service
+</code></pre><ul>
+<li><code>/etc/systemd/system/uwsgi.service</code></li>
+</ul>
+<pre><code>[Unit]
+Description=uWSGI Emperor service
+
+[Service]
+ExecStartPre=/bin/bash -c &apos;mkdir -p /run/uwsgi; chown www-data:www-data /run/uwsgi&apos;
+ExecStart=/usr/bin/uwsgi --emperor /etc/uwsgi/apps-enabled
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
+</code></pre><h4 id="create-symbolic-link-in-system-to-configuration-file">create symbolic link in system to configuration file</h4>
+<pre><code>$ sudo ls /etc/uwsgi
+&gt; apps-available/ apps-enabled/
+
+# in case no apps-available and apps-enabled dir seen
+# $ sudo mkdir -p /etc/uwsgi/apps-available/ /etc/uwsgi/apps-enabled/
+
+# $ sudo ln -s $PWD/slim_unified_client_rest.ini /etc/uwsgi/apps-available/slim_unified_client_rest.ini
+
+$ sudo ln -s $PWD/slim_unified_client_rest.ini /etc/uwsgi/apps-enabled/slim_unified_client_rest.ini
+</code></pre><h4 id="start-uwsgiservice-via-systemd">start <code>uwsgi.service</code> via <code>systemd</code></h4>
+<pre><code>$ sudo systemctl daemon-reload
+
+$ sudo systemctl start uwsgi.service
+
+$ sudo systemctl status uwsgi.service
+
+$ sudo systemctl restart uwsgi.service
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="0x03.rest.html" class="navigation navigation-prev " aria-label="Previous page: Add REST-API via uWSGI and Nginx">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="0x03b01.rest.nginx.html" class="navigation navigation-next " aria-label="Next page: Nginx Web Server Setup">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"uWSGI Application Setup","level":"2.4.1","depth":2,"next":{"title":"Nginx Web Server Setup","level":"2.4.2","depth":2,"path":"0x03b01.rest.nginx.md","ref":"0x03b01.rest.nginx.md","articles":[]},"previous":{"title":"Add REST-API via uWSGI and Nginx","level":"2.4","depth":1,"path":"0x03.rest.md","ref":"0x03.rest.md","articles":[{"title":"uWSGI Application Setup","level":"2.4.1","depth":2,"path":"0x03b00.rest.uwsgi.md","ref":"0x03b00.rest.uwsgi.md","articles":[]},{"title":"Nginx Web Server Setup","level":"2.4.2","depth":2,"path":"0x03b01.rest.nginx.md","ref":"0x03b01.rest.nginx.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"css/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Guang Yang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Docker":"https://docs.docker.com/"}},"gitbook":"*"},"file":{"path":"0x03b00.rest.uwsgi.md","mtime":"2017-10-30T05:57:50.350Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-30T06:30:40.490Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

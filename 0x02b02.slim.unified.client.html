@@ -1,0 +1,658 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>A Unified Slim Client on PredictionService · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Guang Yang">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="css/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="0x03.rest.html" />
+    
+    
+    <link rel="prev" href="0x02b01.slim.inception.resnet.v2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.docker.com/" target="_blank" class="custom-link">Docker</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Docker Image of Tensorflow Serving Inception Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="0x00.init.html">
+            
+                <a href="0x00.init.html">
+            
+                    
+                    Prerequisite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="0x01.tfs.html">
+            
+                <a href="0x01.tfs.html">
+            
+                    
+                    Tensorflow Serving Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="0x02.slim.html">
+            
+                <a href="0x02.slim.html">
+            
+                    
+                    Tensorflow Serving with Tensorflow Slim Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="0x02b00.slim.inception.v4.html">
+            
+                <a href="0x02b00.slim.inception.v4.html">
+            
+                    
+                    Tensorflow Serving with Slim Inception-V4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="0x02b01.slim.inception.resnet.v2.html">
+            
+                <a href="0x02b01.slim.inception.resnet.v2.html">
+            
+                    
+                    Tensorflow Serving with Slim Inception-Resnet-V2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.3" data-path="0x02b02.slim.unified.client.html">
+            
+                <a href="0x02b02.slim.unified.client.html">
+            
+                    
+                    A Unified Slim Client on PredictionService
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="0x03.rest.html">
+            
+                <a href="0x03.rest.html">
+            
+                    
+                    Add REST-API via uWSGI and Nginx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="0x03b00.rest.uwsgi.html">
+            
+                <a href="0x03b00.rest.uwsgi.html">
+            
+                    
+                    uWSGI Application Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="0x03b01.rest.nginx.html">
+            
+                <a href="0x03b01.rest.nginx.html">
+            
+                    
+                    Nginx Web Server Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="0x04.docker.html">
+            
+                <a href="0x04.docker.html">
+            
+                    
+                    Docker Images that Serves Tensorflow Slim Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="0x04b00.docker.grpc.html">
+            
+                <a href="0x04b00.docker.grpc.html">
+            
+                    
+                    Docker Image supports gPRC + protobuf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="0x04b01.docker.rest.html">
+            
+                <a href="0x04b01.docker.rest.html">
+            
+                    
+                    Docker Image supports gPRC + protobuf, and REST + JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="0xff.misc.html">
+            
+                <a href="0xff.misc.html">
+            
+                    
+                    Miscellaneous
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="0xffb00.misc.github.html">
+            
+                <a href="0xffb00.misc.github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="0xffb00.misc.tensorflow.html">
+            
+                <a href="0xffb00.misc.tensorflow.html">
+            
+                    
+                    Tensorflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="0xffb00.misc.uwsgi.nginx.html">
+            
+                <a href="0xffb00.misc.uwsgi.nginx.html">
+            
+                    
+                    uWSGI + Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="0xffb00.misc.docker.html">
+            
+                <a href="0xffb00.misc.docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://github.com/gyang274/">
+            
+                    
+                    yg
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >A Unified Slim Client on PredictionService</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="a-unified-slim-client-on-predictionservice">A Unified Slim Client on PredictionService</h2>
+<p>The objective is unifying the clients:</p>
+<ul>
+<li><p>connect to a tensorflow model servable with specific name given from parameter</p>
+</li>
+<li><p>capable of processing a batch of image_urls</p>
+</li>
+</ul>
+<h3 id="slimunifiedclientpy"><code>slim_unified_client.py</code></h3>
+<ul>
+<li>add slim_unified_client deps in example&apos;s BUILD</li>
+</ul>
+<pre><code>- ./tensorflow_serving/example/BUILD
+
+...
+py_binary(
+    name = &quot;slim_unified_client&quot;,
+    srcs = [
+        &quot;slim_unified_client.py&quot;,
+    ],
+    srcs_version = &quot;PY2AND3&quot;,
+    deps = [
+        &quot;//tensorflow_serving/apis:predict_proto_py_pb2&quot;,
+        &quot;//tensorflow_serving/apis:prediction_service_proto_py_pb2&quot;,
+        &quot;@org_tensorflow//tensorflow:tensorflow_py&quot;,
+    ],
+)
+...
+</code></pre><ul>
+<li>create slim unified client target</li>
+</ul>
+<pre><code>- ./tensorflow_serving/example/slim_unified_client.py
+...
+
+#!/usr/bin/env python2.7
+
+&quot;&quot;&quot;Send image_urls to tensorflow_model_server loaded with slim model.
+&quot;&quot;&quot;
+
+from __future__ import print_function
+
+import urllib2
+
+from multiprocessing.pool import ThreadPool
+
+# This is a placeholder for a Google-internal import.
+
+from grpc.beta import implementations
+import tensorflow as tf
+
+from tensorflow_serving.apis import predict_pb2
+from tensorflow_serving.apis import prediction_service_pb2
+
+
+tf.app.flags.DEFINE_string(
+  &apos;server&apos;, &apos;localhost:9000&apos;, &apos;PredictionService host:port&apos;
+)
+tf.app.flags.DEFINE_string(
+  &apos;model_name&apos;, &apos;&apos;, &apos;Tensorflow Serving Model Name&apos;
+)
+tf.app.flags.DEFINE_string(
+  &apos;image_urls&apos;, &apos;&apos;, &apos;URL to image in JPEG format, comma separated URLs.&apos;
+)
+FLAGS = tf.app.flags.FLAGS
+
+
+def fetch_url(url):
+    try:
+        response = urllib2.urlopen(url)
+        return url, response.read(), None
+    except Exception as e:
+        return url, None, e
+
+def main(_):
+  host, port = FLAGS.server.split(&apos;:&apos;)
+  channel = implementations.insecure_channel(host, int(port))
+  stub = prediction_service_pb2.beta_create_PredictionService_stub(channel)
+  # Send request
+  # See prediction_service.proto for gRPC request/response details.
+  image_urls = FLAGS.image_urls.split(&apos;,&apos;)
+  print(&apos;image_urls:&apos;, image_urls)
+  image_fetch_results = ThreadPool(128).map(fetch_url, image_urls)
+  image_bytes = [
+    result[1] for result in image_fetch_results if result[2] is None
+  ]
+  for result in image_fetch_results:
+    if result[2] is not None:
+      print(&apos;Error in Fetch URL: {}&apos;.format(result[2]))
+  request = predict_pb2.PredictRequest()
+  request.model_spec.name = FLAGS.model_name
+  request.model_spec.signature_name = &apos;predict_images&apos;
+  request.inputs[&apos;images&apos;].CopyFrom(
+    tf.contrib.util.make_tensor_proto(
+      image_bytes, shape=[len(image_bytes)]
+    )
+  )
+  result = stub.Predict(request, 60.0)  # 60 secs timeout
+  print(result)
+
+
+if __name__ == &apos;__main__&apos;:
+  tf.app.run()
+...
+</code></pre><ul>
+<li>server</li>
+</ul>
+<pre><code># open a new terminal //src/serving
+$ bazel-bin/tensorflow_serving/model_servers/tensorflow_model_server \
+    --model_name=slim_inception_resnet_v2 \
+    --model_base_path=$PWD/tf_servables/slim/inception-resnet-v2 \
+    --port=9000 &amp;
+
+# open a new terminal //src/serving
+$ bazel-bin/tensorflow_serving/model_servers/tensorflow_model_server \
+    --model_name=slim_inception_v4 \
+    --model_base_path=$PWD/tf_servables/slim/inception-v4 \
+    --port=9090 &amp;
+</code></pre><ul>
+<li>client</li>
+</ul>
+<pre><code># open a new terminal //src/serving
+$ bazel --output_user_root=./tf_bazel_cache build -c opt //tensorflow_serving/example:slim_unified_client
+
+$ bazel-bin/tensorflow_serving/example/slim_unified_client \
+    --server=localhost:9000 \
+    --model_name=slim_inception_resnet_v2 \
+    --image_urls=/comma/separated/urls/to/my_favoriate_image.jpg
+
+$ bazel-bin/tensorflow_serving/example/slim_unified_client \
+    --server=localhost:9090 \
+    --model_name=slim_inception_v4 \
+    --image_urls=/comma/separated/urls/to/my_favoriate_image.jpg
+</code></pre><pre><code>$ bazel-bin/tensorflow_serving/example/slim_unified_client \
+    --server=localhost:9000 \
+    --model_name=slim_inception_resnet_v2 \
+    --image_url=https://upload.wikimedia.org/wikipedia/commons/d/d9/First_Student_IC_school_bus_202076.jpg,\
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg,\
+https://upload.wikimedia.org/wikipedia/commons/f/fd/Qantas_a380_vh-oqa_takeoff_heathrow_arp.jpg
+
+$ bazel-bin/tensorflow_serving/example/slim_unified_client \
+    --server=localhost:9090 \
+    --model_name=slim_inception_v4 \
+    --image_url=https://upload.wikimedia.org/wikipedia/commons/d/d9/First_Student_IC_school_bus_202076.jpg,\
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg,\
+https://upload.wikimedia.org/wikipedia/commons/f/fd/Qantas_a380_vh-oqa_takeoff_heathrow_arp.jpg
+
+# note: classes, prelogits, and scores are tensors with shape [n-images] x [k-outputs]
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="0x02b01.slim.inception.resnet.v2.html" class="navigation navigation-prev " aria-label="Previous page: Tensorflow Serving with Slim Inception-Resnet-V2">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="0x03.rest.html" class="navigation navigation-next " aria-label="Next page: Add REST-API via uWSGI and Nginx">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"A Unified Slim Client on PredictionService","level":"2.3.3","depth":2,"next":{"title":"Add REST-API via uWSGI and Nginx","level":"2.4","depth":1,"path":"0x03.rest.md","ref":"0x03.rest.md","articles":[{"title":"uWSGI Application Setup","level":"2.4.1","depth":2,"path":"0x03b00.rest.uwsgi.md","ref":"0x03b00.rest.uwsgi.md","articles":[]},{"title":"Nginx Web Server Setup","level":"2.4.2","depth":2,"path":"0x03b01.rest.nginx.md","ref":"0x03b01.rest.nginx.md","articles":[]}]},"previous":{"title":"Tensorflow Serving with Slim Inception-Resnet-V2","level":"2.3.2","depth":2,"path":"0x02b01.slim.inception.resnet.v2.md","ref":"0x02b01.slim.inception.resnet.v2.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"css/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Guang Yang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Docker":"https://docs.docker.com/"}},"gitbook":"*"},"file":{"path":"0x02b02.slim.unified.client.md","mtime":"2017-10-30T05:57:50.350Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-30T06:30:40.490Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

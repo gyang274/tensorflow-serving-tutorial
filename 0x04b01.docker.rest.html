@@ -1,0 +1,561 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Docker Image supports gPRC + protobuf, and REST + JSON · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Guang Yang">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="css/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="0xff.misc.html" />
+    
+    
+    <link rel="prev" href="0x04b00.docker.grpc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.docker.com/" target="_blank" class="custom-link">Docker</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Docker Image of Tensorflow Serving Inception Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="0x00.init.html">
+            
+                <a href="0x00.init.html">
+            
+                    
+                    Prerequisite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="0x01.tfs.html">
+            
+                <a href="0x01.tfs.html">
+            
+                    
+                    Tensorflow Serving Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="0x02.slim.html">
+            
+                <a href="0x02.slim.html">
+            
+                    
+                    Tensorflow Serving with Tensorflow Slim Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="0x02b00.slim.inception.v4.html">
+            
+                <a href="0x02b00.slim.inception.v4.html">
+            
+                    
+                    Tensorflow Serving with Slim Inception-V4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="0x02b01.slim.inception.resnet.v2.html">
+            
+                <a href="0x02b01.slim.inception.resnet.v2.html">
+            
+                    
+                    Tensorflow Serving with Slim Inception-Resnet-V2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="0x02b02.slim.unified.client.html">
+            
+                <a href="0x02b02.slim.unified.client.html">
+            
+                    
+                    A Unified Slim Client on PredictionService
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="0x03.rest.html">
+            
+                <a href="0x03.rest.html">
+            
+                    
+                    Add REST-API via uWSGI and Nginx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="0x03b00.rest.uwsgi.html">
+            
+                <a href="0x03b00.rest.uwsgi.html">
+            
+                    
+                    uWSGI Application Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="0x03b01.rest.nginx.html">
+            
+                <a href="0x03b01.rest.nginx.html">
+            
+                    
+                    Nginx Web Server Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="0x04.docker.html">
+            
+                <a href="0x04.docker.html">
+            
+                    
+                    Docker Images that Serves Tensorflow Slim Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="0x04b00.docker.grpc.html">
+            
+                <a href="0x04b00.docker.grpc.html">
+            
+                    
+                    Docker Image supports gPRC + protobuf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5.2" data-path="0x04b01.docker.rest.html">
+            
+                <a href="0x04b01.docker.rest.html">
+            
+                    
+                    Docker Image supports gPRC + protobuf, and REST + JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="0xff.misc.html">
+            
+                <a href="0xff.misc.html">
+            
+                    
+                    Miscellaneous
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="0xffb00.misc.github.html">
+            
+                <a href="0xffb00.misc.github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="0xffb00.misc.tensorflow.html">
+            
+                <a href="0xffb00.misc.tensorflow.html">
+            
+                    
+                    Tensorflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="0xffb00.misc.uwsgi.nginx.html">
+            
+                <a href="0xffb00.misc.uwsgi.nginx.html">
+            
+                    
+                    uWSGI + Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="0xffb00.misc.docker.html">
+            
+                <a href="0xffb00.misc.docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://github.com/gyang274/">
+            
+                    
+                    yg
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Docker Image supports gPRC + protobuf, and REST + JSON</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="docker-image-supports-gprc--protobuf-and-rest--json">Docker Image supports gPRC + protobuf, and REST + JSON</h2>
+<h3 id="prepare-the-model-servables">Prepare the Model Servables</h3>
+<pre><code># //src - default working directory
+
+# in order to avoid sending all //src/serving into docker build
+$ mkdir -p ./rest/tf_servables
+$ cp -r ./serving/tf_servables/slim ./rest/tf_servables
+
+$ cd rest
+</code></pre><h3 id="prepare-rest-client-and-server">Prepare REST client and server</h3>
+<pre><code>$ cp -rL  ../serving/bazel-bin/tensorflow_serving/example/slim_unified_client.runfiles/tf_serving/tensorflow_serving ./
+
+$ [sudo] rm -r ./tensorflow_serving/example
+
+# &lt;git-repo&gt;//src/rest/slim_unified_client_rest.py
+
+# &lt;git-repo&gt;//src/rest/slim_unified_client_rest.ini
+</code></pre><h3 id="dockerfile">Dockerfile</h3>
+<pre><code># &lt;git-repo&gt;//src/rest/Dockerfile
+</code></pre><h3 id="prepare-docker-init-script">Prepare Docker Init Script</h3>
+<pre><code># &lt;git-repo&gt;//src/rest/init.sh
+</code></pre><h3 id="docker-image">Docker Image</h3>
+<pre><code>//src/rest
+
+$ docker build -t yg-tfs-slim:rest -f Dockerfile .
+</code></pre><h3 id="run-and-inspect-image">Run and Inspect Image</h3>
+<ul>
+<li>run image</li>
+</ul>
+<pre><code>$ docker run -p 9000:9000 -p 9090:9090 -p 80:80 -it yg-tfs-slim:rest
+</code></pre><ul>
+<li>inspect grpc + protobuf</li>
+</ul>
+<pre><code>//src/serving
+
+$ bazel-bin/tensorflow_serving/example/slim_inception_resnet_v2_client \
+     --server=localhost:9000 \
+     --image_url=https://upload.wikimedia.org/wikipedia/commons/d/d9/First_Student_IC_school_bus_202076.jpg
+</code></pre><ul>
+<li>inspect rest + json</li>
+</ul>
+<pre><code>$ curl -X GET 127.0.0.1:80
+
+$ curl -X POST 127.0.0.1:80 -d &apos;{&quot;image_urls&quot;: [&quot;https://upload.wikimedia.org/wikipedia/commons/d/d9/First_Student_IC_school_bus_202076.jpg&quot;, &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg&quot;, &quot;https://upload.wikimedia.org/wikipedia/commons/f/fd/Qantas_a380_vh-oqa_takeoff_heathrow_arp.jpg&quot;]}&apos;
+</code></pre><h3 id="push-to-public">Push to Public</h3>
+<pre><code>$ docker tag yg-tfs-slim:rest gyang274/yg-tfs-slim:rest
+
+$ docker login
+
+$ docker push gyang274/yg-tfs-slim:rest
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="0x04b00.docker.grpc.html" class="navigation navigation-prev " aria-label="Previous page: Docker Image supports gPRC + protobuf">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="0xff.misc.html" class="navigation navigation-next " aria-label="Next page: Miscellaneous">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Docker Image supports gPRC + protobuf, and REST + JSON","level":"2.5.2","depth":2,"next":{"title":"Miscellaneous","level":"3.1","depth":1,"path":"0xff.misc.md","ref":"0xff.misc.md","articles":[{"title":"Github","level":"3.1.1","depth":2,"path":"0xffb00.misc.github.md","ref":"0xffb00.misc.github.md","articles":[]},{"title":"Tensorflow","level":"3.1.2","depth":2,"path":"0xffb00.misc.tensorflow.md","ref":"0xffb00.misc.tensorflow.md","articles":[]},{"title":"uWSGI + Nginx","level":"3.1.3","depth":2,"path":"0xffb00.misc.uwsgi.nginx.md","ref":"0xffb00.misc.uwsgi.nginx.md","articles":[]},{"title":"Docker","level":"3.1.4","depth":2,"path":"0xffb00.misc.docker.md","ref":"0xffb00.misc.docker.md","articles":[]}]},"previous":{"title":"Docker Image supports gPRC + protobuf","level":"2.5.1","depth":2,"path":"0x04b00.docker.grpc.md","ref":"0x04b00.docker.grpc.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"css/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Guang Yang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Docker":"https://docs.docker.com/"}},"gitbook":"*"},"file":{"path":"0x04b01.docker.rest.md","mtime":"2017-10-30T05:57:50.350Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-30T06:30:40.490Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
