@@ -1,0 +1,40 @@
+# doc: gitbook built
+# /doc/_book/
+
+
+# src: bazel built
+/src/serving/bazel-bin
+/src/serving/bazel-ci_build-cache
+/src/serving/bazel-genfiles
+/src/serving/bazel-out
+/src/serving/bazel-serving
+/src/serving/bazel-tensorflow
+/src/serving/bazel-tensorflow_serving
+/src/serving/bazel-testlogs
+/src/serving/bazel-tf
+/src/serving/bazel-workspace
+
+/src/serving/tensorflow/bazel-bin
+/src/serving/tensorflow/bazel-ci_build-cache
+/src/serving/tensorflow/bazel-genfiles
+/src/serving/tensorflow/bazel-out
+/src/serving/tensorflow/bazel-serving
+/src/serving/tensorflow/bazel-tensorflow
+/src/serving/tensorflow/bazel-tensorflow_serving
+/src/serving/tensorflow/bazel-testlogs
+/src/serving/tensorflow/bazel-tf
+/src/serving/tensorflow/bazel-workspace
+
+/src/serving/tf_bazel_cache/
+
+
+# src: checkpoints
+/src/serving/tf_checkpoints/
+
+
+# src: model files
+/src/serving/tf_servables/
+
+/src/grpc/tf_servables/
+/src/rest/tf_servables/
+

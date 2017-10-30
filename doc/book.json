@@ -1,0 +1,13 @@
+{
+  "root": "./src",
+  "author": "Guang Yang",
+  "links": {
+    "sidebar": {
+      "Docker": "https://docs.docker.com/"
+    }
+  },
+  "styles": {
+    "website": "css/website.css"
+  }
+}
+
