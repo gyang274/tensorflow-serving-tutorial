@@ -72,11 +72,11 @@ response = requests.post(
 print(response.json())
 ```
 
-## [Step by Step Guide](https://gyang274.github.io/docker-tensorflow-serving-slim/)
+## Step by Step Guide
 
-This `gh-pages` includes a step by step on how to make these docker images from the begining. 
+This [`gh-pages`](https://gyang274.github.io/docker-tensorflow-serving-slim/) includes a step by step on how to make these docker images from the begining. 
 
-## [GitHub Repository](https://github.com/gyang274/docker-tensorflow-serving-slim)
+## GitHub Repository
 
-This github repository includes all source codes.
+This [github repository](https://github.com/gyang274/docker-tensorflow-serving-slim) includes all source codes.
 
