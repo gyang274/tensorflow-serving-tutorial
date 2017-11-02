@@ -50,16 +50,16 @@ def application(environ, start_response):
             'body': {
               'host': 'optional, host for tensorflow serving model server, default "127.0.0.1"',
               'port': 'optional, port for tensorflow serving model server, default "9000"',
-              'model_name': 'optional, tensorflow serving model name, default "slim_inception_resnet_v2"' +
-              ', all available models: slim_inception_resnet_v2 at port 9000, and slim_inception_v4 at port 9090',
+              'model_name': 'optional, tensorflow serving model name, default "slim_inception_resnet_v2", ' +
+                'all available models: slim_inception_resnet_v2 at port 9000, and slim_inception_v4 at port 9090',
               'image_urls': 'required, image urls in list'
             }
           },
           'returns': {
             'classes': 'top 5 classes of each input image_urls, in shape `n x 5`',
             'scores': 'top 5 classes scores (probabilities) of each input image_urls, in shape `n x 5`',
-            'prelogits': 'a numeric vector of 1536 of each input image_urls, in shape n x 1536' +
-              ', this vector can be viewed as features of each input image_urls for transfer learning or etc.'
+            'prelogits': 'a numeric vector of 1536 of each input image_urls, in shape `n x 1536`, ' +
+              'this vector can be viewed as features of each input image_urls for transfer learning or etc.'
           }
         }
       }
@@ -82,14 +82,24 @@ def application(environ, start_response):
       port = request_body.get('port', '9000')
       model_name = request_body.get('model_name', 'slim_inception_resnet_v2')
       image_urls = request_body.get('image_urls', [])
-      # print('host, port:', host + ':' + port)
+      # print('channel:', host+':'+port)
       # print('model_name:', model_name)
       # print('image_urls:', image_urls)
 
       assert len(image_urls) > 0, "payload should contains a image_urls as a list of image urls."
+      assert len(image_urls) <= 128, "payload should contains a image_urls as a list of image urls, " + \
+                                     "with length less than or equal to 128."
 
       # fetch image urls into bytes, in parallel
-      image_fetch_results = ThreadPool(128).map(fetch_url, image_urls)
+      # multiprocessing.pool.ThreadPool is undocumented, as its implementation has never been completed
+      # and in modern computer architecture, starting a process has a similar cost as starting a thread
+      # as a result, often it is preferred to use multiprocessing.Pool, with the following exception:
+      # CPU bound jobs -> multiprocessing.Pool
+      # IO bound jobs -> multiprocessing.pool.ThreadPool
+      _thread_pool = ThreadPool(len(image_urls))
+      image_fetch_results = _thread_pool.map(fetch_url, image_urls)
+      _thread_pool.close() # close the thread pool explicitly to avoid `can't start new thread`
+
       image_bytes = [
         result[1] for result in image_fetch_results if result[2] is None
       ]
@@ -126,7 +136,9 @@ def application(environ, start_response):
       ]
       assert len(result_classes_shape) == 2
       result_classes = [
-        result_classes_value[i:i+result_classes_shape[1]] for i in range(0, len(result_classes_value), result_classes_shape[1])
+        result_classes_value[i:i+result_classes_shape[1]] for i in range(
+          0, len(result_classes_value), result_classes_shape[1]
+        )
       ]
 
       # floatVal is able to go the easy way
