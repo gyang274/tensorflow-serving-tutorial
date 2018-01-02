@@ -2,7 +2,7 @@
 
 ## Overview
 
-- [Docker Image of Tensorflow Serving Inception Models](README.md)
+- [Tensorflow Serving Tutorial](README.md)
 
 ## Guide
 

@@ -1,6 +1,6 @@
 # tensorflow-serving-tutorial
 
-A step by step guide on how to use tensorflow serving to serve a tensorflow model. These steps are illustrated with google's slim models, e.g., inception-v4, inception-resnet-v2, via tensorflow serving. And the result served models with gRPC and REST services are wrapped into a docker image for further development. Read the step by step guide at this [`gh-pages`](https://gyang274.github.io/tensorflow-serving-tutorial/)
+A step by step guide on how to use tensorflow serving to serve a tensorflow model. These steps are illustrated with google's slim models, e.g., inception-v4, inception-resnet-v2, via tensorflow serving. And the result served models with gRPC and REST services are wrapped into a docker image for further development. Read the step by step guide at this [`gh-pages`](https://gyang274.github.io/tensorflow-serving-tutorial/).
 
 ## Quick Start
 
