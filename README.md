@@ -1,6 +1,6 @@
-# docker-tensorflow-serving-slim
+# tensorflow-serving-tutorial
 
-[A docker image that serves google's slim models, e.g., inception-v4, inception-resnet-v2, via tensorflow serving.](https://gyang274.github.io/docker-tensorflow-serving-slim/)
+A step by step guide on how to use tensorflow serving to serve a tensorflow model. These steps are illustrated with google's slim models, e.g., inception-v4, inception-resnet-v2, via tensorflow serving. And the result served models with gRPC and REST services are wrapped into a docker image for further development. Read the step by step guide at this [`gh-pages`](https://gyang274.github.io/tensorflow-serving-tutorial/)
 
 ## Quick Start
 
@@ -76,9 +76,9 @@ print(response.json())
 
 ## Step by Step Guide
 
-This [`gh-pages`](https://gyang274.github.io/docker-tensorflow-serving-slim/) includes a step by step on how to make these docker images from the begining. 
+This [`gh-pages`](https://gyang274.github.io/tensorflow-serving-tutorial/) includes a step by step on how to make these docker images from the begining. 
 
 ## GitHub Repository
 
-This [github repository](https://github.com/gyang274/docker-tensorflow-serving-slim) includes all source codes.
+This [github repository](https://github.com/gyang274/tensorflow-serving-tutorial) includes all source codes.
 
